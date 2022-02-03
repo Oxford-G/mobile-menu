@@ -6,14 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="./favicon.ico" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Aziz Mejri - Portfolio</title>
   </head>
   <body>
     <header>
       <h1 id="logo">Aziz Mejri</h1>
-      <button type="button" class="menu-bars">
-        <i class="fas fa-bars"></i>
-      </button>
+
+      <div class="md:hidden mob_box">
+        <div id="myNav" class="overlay-header">
+          <button class="closebtn" onclick="closeNav()">
+            <i class="bx bx-x"></i>
+          </button>
+          <nav class="overlay-content">
+            <a href="#home" class="header__link">Portfolio</a>
+            <hr class="nav-hr" />
+            <a href="#about" class="header__link">About</a>
+            <hr class="nav-hr" />
+            <a href="#connect" class="header__link">Contact</a>
+            <hr class="nav-hr" />
+          </nav>
+        </div>
+        <button type="button" class="menu-bars" onclick="openNav()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
       <nav id="desktop-nav">
         <ul>
           <li><a class="nav-link" href="#projects">Portoflio</a></li>
@@ -442,5 +462,6 @@
       src="https://kit.fontawesome.com/e966a3bd22.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
