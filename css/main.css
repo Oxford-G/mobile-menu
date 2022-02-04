@@ -63,12 +63,18 @@ html {
   margin-right: 8px;
 }
 
-/* .overlay-header .closebtn {
+/* .nav-icon {
+  font-size: 40px;
+  transform: rotate(-90deg);
+  margin-right: 8px;
+} */
+
+.overlay-header .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
-} */
+}
 
 @media screen and (max-height: 450px) {
   .overlay-header a {
